@@ -7,7 +7,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/batann/lc-plymouth/images/logo.png">
-    <img src="images/logo.png" alt="Logo" width="512" height="512">
+    <img src="images/logo.png" alt="Logo" width="1024" height="512">
   </a>
 
 <h3 align="center">LC-Linux</h3>
@@ -100,22 +100,14 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-
-
-1. If it doesnt exist, create `.config/lcbackup`
-2. Move all existing dot files to `.config/lcbackup`
-3. Move all dot files from `dot` to $USER
+1. Clone Repository
+2. Run <i>install.sh</i>
 
 
   ```sh
-if [[ ! -d /home/batan/.config/lcbackup ]]; then
-  mkdir -p /home/batan/.config/lcbackup
-  fi
-  for i in $(ls /home/batan/lc-plymouth/); do
-  mv /home/batan/.$i /home/batan/.config/lcbackup
-  mv /home/batan/lc-plymouth/$i /home/batan/.$i
-  done
- sudo rm -r /home/batan/lc-plymouth
+  git clone https://github.com/batann/lc-plymouth
+  sudo chown a+x lc-plymouth/install.sh
+  sudo bash lc-plymouth/instal.sh
  ```
 
 <p align="right">(<a href="#dot-top">back to top</a>)</p>
