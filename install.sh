@@ -35,6 +35,7 @@ fi
 if [[ -d /usr/share/plymouth/themes/anon ]]; 
 then 
 	sudo mv /usr/share/plymouth/themes/anon /usr/share/plymouth/themes/anon-old
+ sudo mkdir -p /usr/share/plymouth/themes/anon 
 fi
 for i in $(ls /home/batan/lc-plymouth/|grep -vE "install.sh|README.md|.git"); do
 	sudo cp /home/batan/lc-plymouth/$i /usr/share/plymouth/themes/anon/$i
