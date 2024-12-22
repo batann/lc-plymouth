@@ -107,7 +107,7 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   git clone https://github.com/batann/lc-plymouth
   sudo chown a+x lc-plymouth/install.sh
-  sudo bash lc-plymouth/instal.sh
+  sudo bash lc-plymouth/install.sh
  ```
 
 <p align="right">(<a href="#dot-top">back to top</a>)</p>
